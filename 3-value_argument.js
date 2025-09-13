@@ -1,10 +1,2 @@
 #!/usr/bin/node
-const args = process.argv.length - 2; // count how many arguments are passed after "node filename.js"
-
-if (args === 0) {
-  console.log("No argument");
-} else if (args === 1) {
-  console.log("Argument found");
-} else {
-  console.log("Arguments found");
-}
+console.log(process.argv[2] || 'No argument');
